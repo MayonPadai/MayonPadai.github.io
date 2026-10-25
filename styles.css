@@ -40,3 +40,9 @@ html{font-size:18px}.about .section-grid{grid-template-columns:1fr}.about .secti
 #activities{padding-top:2.5rem;padding-bottom:.5rem}#activities h2{font-size:clamp(2rem,3.2vw,3.2rem);margin-bottom:1.5rem}
 
 .gallery-rail{scroll-snap-type:none}.gallery-pause{font:inherit;font-size:.8rem;color:var(--copper);border:1px solid #d6a47b80;border-radius:3px;background:transparent;padding:.35rem .7rem;cursor:pointer}.gallery-pause:focus-visible{outline:2px solid var(--copper);outline-offset:4px}
+
+/* Heritage walk: keep complete photographs visible in the new album. */
+#heritage-walk-gallery .gallery-card img{object-fit:contain;background:#242a24}
+
+/* Recent activities share the gallery auto-scroll behavior. */
+#activities .event-feature-grid{display:flex;gap:2rem;overflow-x:auto;padding-bottom:1rem;scrollbar-color:var(--copper) #d8d3c8}#activities .event-feature-grid>figure{flex:0 0 calc((100% - 2rem)/2);min-width:0}#activities .event-feature-grid img{height:auto;aspect-ratio:4/3;object-fit:contain;background:#e8e1d5}@media(max-width:700px){#activities .event-feature-grid>figure{flex-basis:85%}}
